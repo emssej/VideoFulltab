@@ -4,7 +4,7 @@
     "author": "Emil Kosz",
     "homepage_url": "https://github.com/emssej/VideoFulltab",
     "offline_enabled": true,
-    "version": "0.5",
+    "version": "0.0.0.1",
     "manifest_version": 3,
 
     "background": { "service_worker": "background.js" },
