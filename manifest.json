@@ -1,0 +1,32 @@
+{
+    "name": "Video Fulltab",
+    "description": "A browser extension letting you maximize a video to fill the space of its tab.",
+    "author": "Emil Kosz",
+    "homepage_url": "https://github.com/emssej/VideoFulltab",
+    "offline_enabled": true,
+    "version": "0.5",
+    "manifest_version": 3,
+
+    "background": { "service_worker": "background.js" },
+    "permissions": [ "activeTab", "scripting", "storage" ],
+
+    "action": {
+	"default_title": "Make current video fullscreen",
+	// "default_popup": "popup.html",
+	"default_icon": {
+	    "16": "res/icons/16.png",
+	    "32": "res/icons/32.png",
+	    "180": "res/icons/180.png",
+	    "192": "res/icons/192.png",
+	    "512": "res/icons/512.png"
+	}
+    },
+
+    "icons": {
+	"16": "res/icons/16.png",
+	"32": "res/icons/32.png",
+	"180": "res/icons/180.png",
+	"192": "res/icons/192.png",
+	"512": "res/icons/512.png"
+    }
+}
