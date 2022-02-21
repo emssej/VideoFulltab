@@ -10,7 +10,7 @@
   on the hamburger menu and click /Keyboard Shortcuts/. Add a nice
   shortcut, for example =Ctrl+Shift+E= (or keep the default
   =Ctrl+Shift+F=), and enjoy using this extension.
-* TODO
+* Things to do
   - Add a better system for handling "manual" websites (like YouTube,
     TVP VOD, etc.),
   - Use regex for URL detection,
