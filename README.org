@@ -14,8 +14,5 @@
   shortcut, for example =Ctrl+Shift+E= (or keep the default
   =Ctrl+Shift+F=), and enjoy using this extension.
 * Things to do
-  - Add a better system for handling "manual" websites (like YouTube,
-    TVP VOD, etc.),
-  - Use regex for URL detection,
   - For the YouTube handler, scale the controls as well,
   - Perhaps make the ESC key work as a disabler of fulltab.
