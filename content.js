@@ -1,13 +1,5 @@
 var elements = new Array ();
 
-// TODO:
-//
-// * Add a handler for the websites where you have to set stuff manually.
-//
-// * Use regex for the URLs.
-//
-// * In YouTube make it so that the controls also scale with the video.
-
 if (document.activeElement.nodeName == "VIDEO") {
     elements.push (document.activeElement);
 } else {

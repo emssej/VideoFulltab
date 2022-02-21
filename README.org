@@ -12,3 +12,10 @@
   on the hamburger menu and click /Keyboard Shortcuts/. Add a nice
   shortcut, for example the character =`=, and enjoy using this
   extension.
+* TODO:
+  - Add a better system for handling "manual" websites (like YouTube,
+  TVP VOD, etc.),
+  - Use regex for URL detection,
+  - For the YouTube handler, scale the controls as well,
+  - Perhaps make the ESC key work as a disabler of Fulltab.
+
