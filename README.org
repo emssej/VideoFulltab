@@ -3,18 +3,16 @@
 * What it's about
   *Video Fulltab* is an extension that maximizes videos not to the
   whole screen, but to the whole tab area (the viewport). It works on
-  all HTML5 videos, and soon it'll work on YouTube as well as some
-  other websites given requests (or you can implement it yourself). It
-  maximizes the /focused/ video, so make sure you click on one first.
+  all HTML5 videos, YouTube, and some other choice websites.
 * Shortcuts?
   Given the fact that Chrome supports shortcuts for extensions, you
   can set it in the extensions menu. In =chrome://extensions=, click
   on the hamburger menu and click /Keyboard Shortcuts/. Add a nice
-  shortcut, for example the character =`=, and enjoy using this
-  extension.
-* TODO:
+  shortcut, for example =Ctrl+Shift+E= (or keep the default
+  =Ctrl+Shift+F=), and enjoy using this extension.
+* TODO
   - Add a better system for handling "manual" websites (like YouTube,
-  TVP VOD, etc.),
+    TVP VOD, etc.),
   - Use regex for URL detection,
   - For the YouTube handler, scale the controls as well,
   - Perhaps make the ESC key work as a disabler of Fulltab.
