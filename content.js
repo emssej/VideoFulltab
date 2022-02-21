@@ -22,8 +22,10 @@ if (document.activeElement.nodeName == "VIDEO") {
 // Add the video-fulltab class that maximizes it.
 for (let element of elements) {
     if (element.classList.contains ("video-fulltab")) {
+	document.body.classList.remove ("body-fulltab");
 	element.classList.remove ("video-fulltab");
     } else {
+	document.body.classList.add ("body-fulltab");
 	element.classList.add ("video-fulltab");
     }
 }

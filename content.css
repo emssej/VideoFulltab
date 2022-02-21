@@ -1,3 +1,7 @@
+.body-fulltab {
+    overflow: hidden !important;
+}
+
 .video-fulltab {
     position: fixed !important;
     z-index: 2147483647;		/* I don't know. */
