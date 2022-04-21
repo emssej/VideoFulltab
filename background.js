@@ -1,6 +1,21 @@
-function VideoFulltab (id) {
-    var elements = new Array ();
+/*
 
+  This program is free software: you can redistribute it and/or modify it under
+  the terms of the GNU Affero General Public License as published by the Free Software
+  Foundation, either version 3 of the License, or (at your option) any later
+  version.
+
+  This program is distributed in the hope that it will be useful, but WITHOUT
+  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+  FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+  details.
+
+  You should have received a copy of the GNU Aferro General Public License along
+  with this program. If not, see <https://www.gnu.org/licenses/>.
+
+*/
+
+function VideoFulltab (id) {
     var websites = [
 	{
 	    regex: /(http:|https:)\/\/(www\.)(youtube.com|youtu\.be)\/watch\?v=.+/ius,
@@ -16,6 +31,8 @@ function VideoFulltab (id) {
 	    }
 	}
     ];
+
+    var elements = new Array ();
     
     if (document.activeElement.nodeName == "VIDEO") {
 	elements.push (document.activeElement);
@@ -39,6 +56,16 @@ function VideoFulltab (id) {
 		}
 	    }
 	}
+
+	// If all else fails, try to find an iframe.
+	if (!match) {
+	    for (let iframe of document.getElementsByTagName ("iframe")) {
+		if (document.activeElement.contains (iframe)) {
+		    elements.push (document.activeElement);
+		    elements.push (iframe);
+		}
+	    }
+	}
     }
 
     for (let element of elements) {
@@ -57,6 +84,5 @@ chrome.action.onClicked.addListener ((tab) => {
     chrome.scripting.executeScript ({
 	target: { tabId: tab.id },
 	function: VideoFulltab,
-	args: [tab.id]
     });
 });
